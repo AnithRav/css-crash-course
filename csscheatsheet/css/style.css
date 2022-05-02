@@ -32,6 +32,9 @@ a:active{
     color: green;
 }
 
+.clr{
+    clear: both;
+}
 
 .container{
     width: 80%;
@@ -139,4 +142,53 @@ a:active{
     padding: 10px 15px;
     border: none;
     border-radius: 10px;
+}
+
+.block{
+    float:left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: darkgray;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width:800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative;
+}
+
+.p-box h1{
+    position: absolute;
+    top:40px; /* When using absolute with no other positioning, element will be positioned based on webpage */
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
 }
