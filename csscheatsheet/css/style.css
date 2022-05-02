@@ -1,3 +1,10 @@
+/*
+*{
+    margin: 0;
+    padding: 0; 
+}
+    Asterisk at the beginning means this is a reset and applies to all, results in less confusion and you can work from here to make changes */
+
 body{
     background-color:#f4f4f4;
     color:#555555;
@@ -8,7 +15,7 @@ body{
 /* same as above */
     font: normal 16px Arial, Helvetica, sans-serif; 
 
-    line-height: 1.6em; /* can use pixels or em*/
+    line-height: 1.6em; /* can use pixels or em */
     margin: 0;
 }
 
@@ -20,4 +27,36 @@ body{
 .box-1{
     background-color:#333 ;
     color:#fff;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /* same as border: 5px red solid; */
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dashed;
+    border: 5px red solid;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    /* Same as above */
+
+    padding: 20px;
+    
+    margin-top: 20px;
+    margin: 20px 0;
+    /* This margin applied outside of the border, that is the difference between margin and padding */
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
 }
