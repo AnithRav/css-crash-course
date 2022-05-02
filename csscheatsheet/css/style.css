@@ -19,11 +19,37 @@ body{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color:#000000;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color: green;
+}
+
+
 .container{
     width: 80%;
     margin: auto;
 }
 
+.button{
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background: red;
+    color: white;
+}
 .box-1{
     background-color:#333 ;
     color:#fff;
@@ -59,4 +85,58 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.2em;
     word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0; /* 20px top and bottom, zero left and right */
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.categories h2{
+    text-align: center;
+}
+.categories ul{
+    padding: 0;
+    padding-left: 25px;
+    list-style: square;
+    list-style: none;
+}
+/* If i did .categories a{} it would target links only in the categories but actually going to apply global styles at top */
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/checkmark.png');
+}
+
+.my-form{
+    padding: 40px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input[type="text"], .my-form input[type="email"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
 }
